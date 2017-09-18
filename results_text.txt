@@ -1,0 +1,54 @@
+
+Results of R&D simulation (Assumed player earned 500 resource
+points per weekend to predict how many seasons until R&D completion)
+====================================================================
+====================================================================
+
+Resource points needed for R&D completion in engine department
+----------------------------------------------------------------
+Parameters giving maximum cost:
+Total cost:       24716
+Cost upgs:            0
+Fail upgs:            0
+
+Parameters giving minimum cost:
+Total cost:       17235
+Cost upgs:            5
+Fail upgs:            1
+
+Resource points needed for R&D completion in aero department
+----------------------------------------------------------------
+Parameters giving maximum cost:
+Total cost:       42210
+Cost upgs:            0
+Fail upgs:            0
+
+Parameters giving minimum cost:
+Total cost:       25494
+Cost upgs:            5
+Fail upgs:            2
+
+Resource points needed for R&D completion in chassis department
+----------------------------------------------------------------
+Parameters giving maximum cost:
+Total cost:       34635
+Cost upgs:            0
+Fail upgs:            0
+
+Parameters giving minimum cost:
+Total cost:       21924
+Cost upgs:            5
+Fail upgs:            2
+
+
+Total amount of resource points needed for full R&D completion
+--------------------------------------------------------------
+Using most expensive path:
+Total costs:	    101561
+Weekends:	       203
+Seasons:	      10.2
+
+Using least expensive path:
+Total costs:	     64654
+Weekends:	       129
+Seasons:	       6.5
