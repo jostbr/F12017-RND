@@ -14,7 +14,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 plt.style.use("ggplot")
-fig = plt.figure(figsize = (11, 9))
+fig = plt.figure(figsize = (10, 9))
 ax_1 = fig.add_subplot(2, 2, 1)
 ax_15 = ax_1.twinx()
 ax_2 = fig.add_subplot(2, 2, 2)
@@ -92,22 +92,21 @@ for curr_dep_type in dp.Department.departments:     # For each department
 
 stats_str += "\n\n\nTotal amount of resource points needed for full R&D completion"
 stats_str += "\n--------------------------------------------------------------"
-stats_str += "\nUsing most expensive path:"
+stats_str += "\nUsing most expensive development path:"
 stats_str += "\nTotal costs:\t{:>10.0f}".format(max_cost_all_dep)
 stats_str += "\nWeekends:\t{:>10.0f}".format(max_cost_all_dep/rpoints_per_weekend)
 stats_str += "\nSeasons:\t{:>10.1f}".format(max_cost_all_dep/(rpoints_per_weekend*num_race_weekends))
 
-stats_str += "\n\nUsing least expensive path:"
+stats_str += "\n\nUsing least expensive development path:"
 stats_str += "\nTotal costs:\t{:>10.0f}".format(min_cost_all_dep)
 stats_str += "\nWeekends:\t{:>10.0f}".format(min_cost_all_dep/rpoints_per_weekend)
 stats_str += "\nSeasons:\t{:>10.1f}".format(min_cost_all_dep/(rpoints_per_weekend*num_race_weekends))
 
 print(stats_str)
 
-with open("results_txt.txt", "w") as result_file:
+with open("results_text.txt", "w") as result_file:
     result_file.write(stats_str)    # Write result stats string to file
 
-#ax_1.set_ylim(15500, 27000)
 ax_1.set_xlabel("Number of cost reduction upgrades", fontname = "serif", fontsize = 11)
 ax_1.set_ylabel("R&D costs", fontname = "serif", fontsize = 11)
 ax_1.set_title("R&D costs with 0 QC upgrades", fontname = "serif", fontsize = 14)
@@ -115,17 +114,16 @@ ax_1.legend(loc = "upper right", fontsize = 11)
 ax_15.grid(False)
 ax_15.set_ylabel("Seasons until R&D completion", fontname = "serif", fontsize = 11)
 
-ax_2.set_ylim(15000, 27000)
 ax_2.set_xlabel("Number of quality control upgrades", fontname = "serif", fontsize = 11)
 ax_2.set_ylabel("R&D costs", fontname = "serif", fontsize = 11)
 ax_2.set_title("R&D costs with all 5 cost upgrades", fontname = "serif", fontsize = 14)
-ax_2.legend(loc = "lower right", fontsize = 11)
+ax_2.legend(bbox_to_anchor = (1, 0.15), loc = "lower right", fontsize = 11)
 ax_25.grid(False)
 ax_25.set_ylabel("Seasons until R&D completion", fontname = "serif", fontsize = 11)
 
 ax_3.plot(cost_upgrades, tt_costs_1, marker = "o", linewidth = 2, color = "gray")
 ax_3.set_xlabel("Number of cost reduction upgrades", fontname = "serif", fontsize = 11)
-ax_3.set_ylabel("Total R&D costs", fontname = "serif", fontsize = 11)
+ax_3.set_ylabel("R&D costs", fontname = "serif", fontsize = 11)
 ax_3.set_title("Total R&D costs with 0 QC upgrades", fontname = "serif", fontsize = 14)
 ax_35.plot(cost_upgrades, tt_costs_1/(rpoints_per_weekend*num_race_weekends), alpha = 0.0)
 ax_35.grid(False)
@@ -140,5 +138,5 @@ ax_45.grid(False)
 ax_45.set_ylabel("Seasons until R&D completion", fontname = "serif", fontsize = 11)
 
 fig.tight_layout()
-fig.savefig("results_viz.png")
+fig.savefig("results_visual.png")
 plt.show()

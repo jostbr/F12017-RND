@@ -21,17 +21,17 @@ class Department(object):
 
         if (department_type == Department.departments[0]):
             self.upgrades = {"minor": 9, "major": 4, "ultimate": 2}
-            self.cost_upg_costs = [500.0, 750.0, 1000.0, 1250.0, 1500.0]
-            self.fail_upg_costs = [400.0, 600.0, 800.0, 1000.0, 1200.0]
+            self.cost_upg_costs = [600.0, 800.0, 1000.0, 1200.0, 1400.0]
+            self.fail_upg_costs = [300.0, 450.0, 600.0, 750.0, 900.0]
 
         elif (department_type == Department.departments[1]):
             self.upgrades = {"minor": 16, "major": 7, "ultimate": 3}
-            self.cost_upg_costs = [500.0, 750.0, 1000.0, 1250.0, 1500.0]
-            self.fail_upg_costs = [400.0, 600.0, 800.0, 1000.0, 1200.0]
+            self.cost_upg_costs = [1000.0, 1250.0, 1500.0, 1750.0, 2000.0]
+            self.fail_upg_costs = [500.0, 750.0, 1000.0, 1250.0, 1500.0]
 
         elif (department_type == Department.departments[2]):
             self.upgrades = {"minor": 13, "major": 5, "ultimate": 3}
-            self.cost_upg_costs = [500.0, 750.0, 1000.0, 1250.0, 1500.0]
+            self.cost_upg_costs = [750.0, 1000.0, 1250.0, 1500.0, 1750.0]
             self.fail_upg_costs = [400.0, 600.0, 800.0, 1000.0, 1200.0]
 
         self.upg_costs = {upg_type : upg_cost - self.cost_reduc*self.p_cost_reduc*upg_cost
