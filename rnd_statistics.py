@@ -104,7 +104,7 @@ stats_str += "\nSeasons:\t{:>10.1f}".format(min_cost_all_dep/(rpoints_per_weeken
 
 print(stats_str)
 
-with open("results_text.txt", "w") as result_file:
+with open("results_txt.txt", "w") as result_file:
     result_file.write(stats_str)    # Write result stats string to file
 
 #ax_1.set_ylim(15500, 27000)
@@ -140,5 +140,5 @@ ax_45.grid(False)
 ax_45.set_ylabel("Seasons until R&D completion", fontname = "serif", fontsize = 11)
 
 fig.tight_layout()
-fig.savefig("results_visual.png")
+fig.savefig("results_viz.png")
 plt.show()
