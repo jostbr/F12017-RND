@@ -1,4 +1,4 @@
-# Research and development in F1 2017
+# Simulation of Research and Development in F1 2017
 Scripts for conducting statistical simulations of the R&D process in F1 2017. The aim is
 to gain insights into the optimal way to spend resource points in order to develop
 the car in the fastes possible way. The results from running the script is output data in a
