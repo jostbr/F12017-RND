@@ -9,7 +9,9 @@ would be cheaper than buying them later in the process if you're going to buy th
 
 Feel free to change some of the parameters to see how they affect the results. In particular,
 the parameter p_fail (describing the probability that an upgrade will fail on its first attempt
-before any wuality control extra upgrades are applied) is rather uncertain, but must be larger
-or equal to 0.375 and is most likely not larger than 0.5. Below is and example result of the simulation:
+before any quality control extra upgrades are applied) is the only uncertain parameter in the
+simulation. Based on the wuality control upgrades reducing failure probability by 0.075, it seems
+like p_fail must at least be 0.375 and is most likely not larger than 0.5. Below is and example
+result of the simulation:
 
 ![Visualization of R&D simulation](results_visual.png)
