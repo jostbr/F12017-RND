@@ -9,12 +9,12 @@ class Department(object):
     upgrade_costs = {"minor": 1000.0, "major": 1500.0, "ultimate": 2000.0}
 
     def __init__(self, department_type, cost_reduc, fail_reduc, p_fail):
-        self.p_cost_reduc = 0.1
-        self.p_fail_reduc = 0.075
-
         self.dep_type = department_type
         self.cost_reduc = cost_reduc
         self.fail_reduc = fail_reduc
+
+        self.p_cost_reduc = 0.1
+        self.p_fail_reduc = 0.075
         self.p_fail = p_fail - self.fail_reduc*self.p_fail_reduc
 
         self.total_cost = None      # To hold total cost of development
@@ -48,10 +48,9 @@ class Department(object):
 
         while ((random.random() < prob_fail) and (attempt < 2)):    # While upgrade fails
             attempt += 1
-            prob_fail -= attempt*self.p_fail_reduc                  # New reduced fail prob
+            prob_fail -= attempt*self.p_fail_reduc                                 # Assumes probability halfes
             upg_cost += self.upg_costs[upg_type] / (2*attempt)      # Add cost for new attempt
 
-        #print("Type: {}, cost: {:.1f}, attempts: {}".format(upg_type, upg_cost, attempt))
         return upg_cost
 
     def get_total_costs(self, num_samples = 100):

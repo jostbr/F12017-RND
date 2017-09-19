@@ -7,36 +7,36 @@ points per weekend to predict how many seasons until R&D completion)
 Resource points needed for R&D completion in engine department
 ----------------------------------------------------------------
 Parameters giving maximum cost:
-Total cost:       24687
+Total cost:       24668
 Cost upgs:            0
 Fail upgs:            0
 
 Parameters giving minimum cost:
-Total cost:       17124
+Total cost:       17178
 Cost upgs:            5
 Fail upgs:            2
 
 Resource points needed for R&D completion in aero department
 ----------------------------------------------------------------
 Parameters giving maximum cost:
-Total cost:       42438
+Total cost:       42308
 Cost upgs:            0
 Fail upgs:            0
 
 Parameters giving minimum cost:
-Total cost:       28285
+Total cost:       28169
 Cost upgs:            5
 Fail upgs:            2
 
 Resource points needed for R&D completion in chassis department
 ----------------------------------------------------------------
 Parameters giving maximum cost:
-Total cost:       34516
+Total cost:       34580
 Cost upgs:            0
 Fail upgs:            0
 
 Parameters giving minimum cost:
-Total cost:       23130
+Total cost:       23122
 Cost upgs:            5
 Fail upgs:            2
 
@@ -44,11 +44,11 @@ Fail upgs:            2
 Total amount of resource points needed for full R&D completion
 --------------------------------------------------------------
 Using most expensive development path:
-Total costs:	    101642
+Total costs:	    101556
 Weekends:	       203
 Seasons:	      10.2
 
 Using least expensive development path:
-Total costs:	     68538
+Total costs:	     68469
 Weekends:	       137
-Seasons:	       6.9
+Seasons:	       6.8
