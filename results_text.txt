@@ -1,5 +1,5 @@
 
-Results of R&D simulation (Assumed player earned 500 resource
+Results of R&D simulation (Assumed player earned 600 resource
 points per weekend to predict how many seasons until R&D completion)
 ====================================================================
 ====================================================================
@@ -7,36 +7,36 @@ points per weekend to predict how many seasons until R&D completion)
 Resource points needed for R&D completion in engine department
 ----------------------------------------------------------------
 Parameters giving maximum cost:
-Total cost:       24778
+Total cost:       24761
 Cost upgs:            0
 Fail upgs:            0
 
 Parameters giving minimum cost:
-Total cost:       17154
+Total cost:       17140
 Cost upgs:            5
 Fail upgs:            2
 
 Resource points needed for R&D completion in aero department
 ----------------------------------------------------------------
 Parameters giving maximum cost:
-Total cost:       42410
+Total cost:       42349
 Cost upgs:            0
 Fail upgs:            0
 
 Parameters giving minimum cost:
-Total cost:       28285
+Total cost:       28243
 Cost upgs:            5
 Fail upgs:            2
 
 Resource points needed for R&D completion in chassis department
 ----------------------------------------------------------------
 Parameters giving maximum cost:
-Total cost:       34530
+Total cost:       34536
 Cost upgs:            0
 Fail upgs:            0
 
 Parameters giving minimum cost:
-Total cost:       23139
+Total cost:       23145
 Cost upgs:            5
 Fail upgs:            2
 
@@ -44,24 +44,24 @@ Fail upgs:            2
 Total resource points needed for full R&D completion in engine, aero and chassis department
 ------------------------------------------------------------------------------------------
 Using most expensive development path:
-Total costs:	    101719
-Weekends:	       203
-Seasons:	      10.2
+Total costs:	    101646
+Weekends:	       169
+Seasons:	       8.5
 
 Using least expensive development path:
-Total costs:	     68578
-Weekends:	       137
-Seasons:	       6.9
+Total costs:	     68528
+Weekends:	       114
+Seasons:	       5.7
 
 
 Total resource points needed for full R&D completion also including durability department
 ------------------------------------------------------------------------------------------
 Using most expensive development path:
-Total costs:	    113219
-Weekends:	       226
-Seasons:	      11.3
+Total costs:	    113146
+Weekends:	       189
+Seasons:	       9.4
 
 Using least expensive development path:
-Total costs:	     80078
-Weekends:	       160
-Seasons:	       8.0
+Total costs:	     80028
+Weekends:	       133
+Seasons:	       6.7
