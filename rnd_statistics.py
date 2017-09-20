@@ -92,8 +92,8 @@ for num_pf in range(len(p_fails)):
             max_cost_all_dep += max_dep.total_cost
             min_cost_all_dep += min_dep.total_cost
 
-stats_str += "\n\n\nTotal amount of resource points needed for full R&D completion"
-stats_str += "\n--------------------------------------------------------------"
+stats_str += "\n\n\nTotal resource points needed for full R&D completion in engine, aero and chassis department"
+stats_str += "\n------------------------------------------------------------------------------------------"
 stats_str += "\nUsing most expensive development path:"
 stats_str += "\nTotal costs:\t{:>10.0f}".format(max_cost_all_dep)
 stats_str += "\nWeekends:\t{:>10.0f}".format(max_cost_all_dep/rpoints_per_weekend)
@@ -103,6 +103,21 @@ stats_str += "\n\nUsing least expensive development path:"
 stats_str += "\nTotal costs:\t{:>10.0f}".format(min_cost_all_dep)
 stats_str += "\nWeekends:\t{:>10.0f}".format(min_cost_all_dep/rpoints_per_weekend)
 stats_str += "\nSeasons:\t{:>10.1f}".format(min_cost_all_dep/(rpoints_per_weekend*num_race_weekends))
+
+max_including_durability = max_cost_all_dep + dp.Department.durability_upg_cost
+min_including_durability = min_cost_all_dep + dp.Department.durability_upg_cost
+
+stats_str += "\n\n\nTotal resource points needed for full R&D completion also including durability department"
+stats_str += "\n------------------------------------------------------------------------------------------"
+stats_str += "\nUsing most expensive development path:"
+stats_str += "\nTotal costs:\t{:>10.0f}".format(max_including_durability)
+stats_str += "\nWeekends:\t{:>10.0f}".format(max_including_durability/rpoints_per_weekend)
+stats_str += "\nSeasons:\t{:>10.1f}".format(max_including_durability/(rpoints_per_weekend*num_race_weekends))
+
+stats_str += "\n\nUsing least expensive development path:"
+stats_str += "\nTotal costs:\t{:>10.0f}".format(min_including_durability)
+stats_str += "\nWeekends:\t{:>10.0f}".format(min_including_durability/rpoints_per_weekend)
+stats_str += "\nSeasons:\t{:>10.1f}".format(min_including_durability/(rpoints_per_weekend*num_race_weekends))
 
 print(stats_str)
 

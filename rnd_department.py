@@ -7,6 +7,7 @@ class Department(object):
     and methods for computing the resource point usage when purchasing all upgrades."""
     departments = ["engine", "aero", "chassis"]
     upgrade_costs = {"minor": 1000.0, "major": 1500.0, "ultimate": 2000.0}
+    durability_upg_cost = 23*500   # Holds total cost of the durability department
 
     def __init__(self, department_type, cost_reduc, fail_reduc, p_fail):
         self.dep_type = department_type
@@ -17,7 +18,7 @@ class Department(object):
         self.p_fail_reduc = 0.075
         self.p_fail = p_fail - self.fail_reduc*self.p_fail_reduc
 
-        self.total_cost = None      # To hold total cost of development
+        self.total_cost = None              # To hold total cost of a performance department
 
         if (department_type == Department.departments[0]):
             self.upgrades = {"minor": 9, "major": 4, "ultimate": 2}
