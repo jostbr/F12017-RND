@@ -6,9 +6,9 @@ Scripts for conducting statistical simulations of the R&D process in F1 2017. Th
 
 ![Visualization of R&D simulation](results_visual.png)
 
-### The top two plots visualizes the R&D costs for each perfromance department (not counting the durability upgrades for engine and gearbox) as a function of cost reduction upgrades and quality control upgrades, respectively. The two lower plots show the sum of all three departments and for different choices of the slightly uncertain parameter `p_fail`. (The top two plots use probability `p_fail`=50% that an upgrade will fail on first attempt (see uncertainty discussion below for further info on this)). The left y-axis in each plot shows amount of resource points required while the right y-axis show the number of seasons required assuming 600 resource points earned per race weekend.
+The top two plots visualizes the R&D costs for each perfromance department (not counting the durability upgrades for engine and gearbox) as a function of cost reduction upgrades and quality control upgrades, respectively. The two lower plots show the sum of all three departments and for different choices of the slightly uncertain parameter `p_fail`. (The top two plots use probability `p_fail`= 50% that an upgrade will fail on first attempt (see uncertainty discussion below for further info on this)). The left y-axis in each plot shows amount of resource points required while the right y-axis show the number of seasons required assuming 600 resource points earned per race weekend.
 
-Some key features to notice about the results:
+### Some key features to notice about the results:
 
 * There are significant differences in R&D costs depending on department regardless of cost reduction and quality control upgrades. Aero being the most expensive (it has most upgrades and most expensive cost reduction upgrades), engine the cheapest department and chassis somwehere in between.
 
@@ -18,7 +18,9 @@ Some key features to notice about the results:
 
 * The effect of the parameter `p_fail` (discussed below) can be seen in the two lower plots. And as one might expect, a lower value results in lower overall R&D costs since the probability that each upgrade will fail is less. Also in the lower right plot we can also see, through the rightwards shift that the importance of quality upgrades increases as the failure probability increases. This seems resonable.
 
-* Regarding numbers we see that using the most cost effective development path (that is 5 cost reduction upgrades an 2 QC upgrades), you will need around 65K-70K resource points or 5.5-5.8 seasons (assuming 600 resource points per race weekend (this might be a bit high assumption) in order tu fully develop the performance departments engine, aero and chassis. When counting the durability upgrades as well, you need an additional 11.5K resource points, or 1 more season. This would bring total for 100% upgraded car to 76.5K-81.5K resource points or 6.5-6.8 seasons.
+* Regarding numbers we see that using the most cost effective development path, you will need around 65K-70K resource points or 5.5-5.8 seasons (assuming 600 resource points per race weekend (this might be a bit high assumption) in order tu fully develop the performance departments engine, aero and chassis. When counting the durability upgrades as well, you need an additional 11.5K resource points, or 1 more season. This would bring total for 100% upgraded car to 76.5K-81.5K resource points or 6.5-6.8 seasons. See more detailed numbers in [text file](results_text.txt).
+
+Final conclusion: Optimal strategy for lowest possible R&D costs for a fully developed car, is 5 cost reduction upgrades and 2 quality control upgrades.
 
 
 ## Uncertain prameters
