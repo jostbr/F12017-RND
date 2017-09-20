@@ -20,10 +20,10 @@ The top two plots visualizes the R&D costs for each perfromance department (not 
 
 * Regarding numbers we see that using the most cost effective development path, you will need around 65K-70K resource points or 5.5-5.8 seasons (assuming 600 resource points per race weekend (this might be a bit high assumption) in order tu fully develop the performance departments engine, aero and chassis. When counting the durability upgrades as well, you need an additional 11.5K resource points, or 1 more season. This would bring total for 100% upgraded car to 76.5K-81.5K resource points or 6.5-6.8 seasons. See more detailed numbers in [text file](results_text.txt).
 
-Final conclusion: Optimal strategy for lowest possible R&D costs for a fully developed car, is 5 cost reduction upgrades and 2 quality control upgrades.
+**Final conclusion: Optimal strategy for lowest possible R&D costs for a fully developed car, is 5 cost reduction upgrades and 2 quality control upgrades.**
 
 
-## Uncertain prameters
+## Uncertain parameters
 There are only two somewhat uncertain parameters in the simulation:
 * `p_fail`: The probability that an upgrade will fail on its first attempt before any quality control extra upgrades are applied.Based on the quality control upgrades reducing failure probability by 0.075, it seems like p_fail must at leastbe 0.375 and is most likely not larger than 0.5. Above are the results for a range of `p_fail`'s between these values plottet and, as can be seen, the different choices of `p_fail` does not significantly affect the results and the main conclusions discussed above remain the same.
 

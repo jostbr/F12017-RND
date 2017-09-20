@@ -52,7 +52,7 @@ for num_pf in range(len(p_fails)):
         for cost_upgs in cost_upgrades:         # For each number of applied cost reduc upgrades
             for fail_upgs in fail_upgrades:     # For each number of applied fail reduc upgrades
                 dep = dp.Department(curr_dep_type, cost_upgs, fail_upgs, p_fails[num_pf])  # Init department
-                curr_total_cost = dep.get_total_costs(num_samples = 10000)   # Compute total costs
+                curr_total_cost = dep.get_total_costs(num_samples = 1000)   # Compute total costs
 
                 if (curr_total_cost > max_total_cost):
                     max_total_cost = curr_total_cost        # Collect max cost path
