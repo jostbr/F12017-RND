@@ -7,49 +7,49 @@ points per weekend to predict how many seasons until R&D completion)
 Resource points needed for R&D completion in engine department
 ----------------------------------------------------------------
 Parameters giving maximum cost:
-Total cost:       24709
+Total cost:       24778
 Cost upgs:            0
 Fail upgs:            0
 
 Parameters giving minimum cost:
-Total cost:       17159
+Total cost:       17154
 Cost upgs:            5
 Fail upgs:            2
 
 Resource points needed for R&D completion in aero department
 ----------------------------------------------------------------
 Parameters giving maximum cost:
-Total cost:       42411
+Total cost:       42410
 Cost upgs:            0
 Fail upgs:            0
 
 Parameters giving minimum cost:
-Total cost:       28202
+Total cost:       28285
 Cost upgs:            5
 Fail upgs:            2
 
 Resource points needed for R&D completion in chassis department
 ----------------------------------------------------------------
 Parameters giving maximum cost:
-Total cost:       34534
+Total cost:       34530
 Cost upgs:            0
 Fail upgs:            0
 
 Parameters giving minimum cost:
-Total cost:       23162
+Total cost:       23139
 Cost upgs:            5
-Fail upgs:            1
+Fail upgs:            2
 
 
 Total resource points needed for full R&D completion in engine, aero and chassis department
 ------------------------------------------------------------------------------------------
 Using most expensive development path:
-Total costs:	    101655
+Total costs:	    101719
 Weekends:	       203
 Seasons:	      10.2
 
 Using least expensive development path:
-Total costs:	     68522
+Total costs:	     68578
 Weekends:	       137
 Seasons:	       6.9
 
@@ -57,11 +57,11 @@ Seasons:	       6.9
 Total resource points needed for full R&D completion also including durability department
 ------------------------------------------------------------------------------------------
 Using most expensive development path:
-Total costs:	    113155
+Total costs:	    113219
 Weekends:	       226
 Seasons:	      11.3
 
 Using least expensive development path:
-Total costs:	     80022
+Total costs:	     80078
 Weekends:	       160
 Seasons:	       8.0
