@@ -8,6 +8,8 @@ and quality control extra upgrades. In the case where cost reduction or quality 
 are bought, they are assumed to be purchased at the very start of the R&D process (because this
 would be cheaper than buying them later in the process if you're going to buy them anyway).
 
+[Visualization of R&D simulation](results_visual.png)
+
 The only uncertain parameters in the simulation, the parameter p_fail (describing the probability
 that an upgrade will fail on its first attempt before any quality control extra upgrades are applied)
 and the rate at which the fail probability decreases once it has already failed. Based on the quality
@@ -20,5 +22,3 @@ at an upgrade.
 
 Feel free to play around with the parameters and see how they affect the results. Below is an example
 of the results of the simulation.
-
-![Visualization of R&D simulation](results_visual.png)
