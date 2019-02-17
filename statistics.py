@@ -1,6 +1,6 @@
 
 # Script for conducting statistical simulations using the Department class from
-# rnd_department.py. The aim is to, through simulating the research and development
+# department.py. The aim is to, through simulating the research and development
 # (R&D) process in an F1 team in the game F1 2017, to gain insights into the optimal
 # way to spend resource points in order to develop the car in the fastes possible way.
 # The results from running the script is output data in a text a file and some plots
