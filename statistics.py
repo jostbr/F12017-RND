@@ -9,7 +9,7 @@
 # they are assumed to be purchased at the very start of the R&D process (because this would
 # be cheaper than buying them later in the process if you're going to buy them anyway).
 
-import rnd_department as dp
+import department as dp
 import numpy as np
 import matplotlib.pyplot as plt
 
